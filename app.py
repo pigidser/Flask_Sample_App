@@ -12,6 +12,7 @@ ml_model = joblib.load(mul_reg)
 def home():
     return(render_template('home.html'))
 
+# decorator
 @app.route('/predict', methods=['GET','POST'])
 def predict():
     if request.method == 'POST':
