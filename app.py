@@ -33,5 +33,6 @@ def predict():
             return "Please check if the values are entered correctly"
     return render_template('predict.html', prediction = model_prediction)
 
+# comment for reverted branch
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
